@@ -20,10 +20,9 @@ export const StackGame: React.FC = () => {
   }, [handleInteraction]);
 
   return (
-    <div 
+    <div
       className="game-container"
-      onClick={handleInteraction}
-      onTouchStart={(e) => {
+      onPointerDown={(e) => {
         e.preventDefault();
         handleInteraction();
       }}
